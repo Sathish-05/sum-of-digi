@@ -1,0 +1,24 @@
+#include<stdio.h>
+int add();
+int main()
+{
+ int num,result;
+ printf("enter the num=");
+ scanf("%d",&num);
+ result=add(num);
+ printf("sum of the digit %d is %d",num, result);
+ return 0;
+}
+int add(num)
+{
+if(num!=0)
+ {
+return (num % 10 + add (num / 10)); 
+} 
+else 
+{ 
+return 0;
+ }
+
+}
+    
